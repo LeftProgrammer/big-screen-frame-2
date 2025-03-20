@@ -1,0 +1,44 @@
+# Dependencies
+node_modules
+
+# Log files
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build output
+dist
+dist-ssr
+*.local
+*.tsbuildinfo
+packages/*/dist
+packages/*/types
+
+# Type definition files
+components.d.ts
+
+# Editor files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+*.suo
+*.njsproj
+*.sln
+*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Cache files
+.cache
+packages/docs/.vitepress/cache
+
+# Environment variables
+.env
+.env.*
+!.env.example
