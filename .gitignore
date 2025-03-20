@@ -14,8 +14,6 @@ dist
 dist-ssr
 *.local
 *.tsbuildinfo
-packages/*/dist
-packages/*/types
 
 # Type definition files
 components.d.ts
@@ -36,7 +34,6 @@ Thumbs.db
 
 # Cache files
 .cache
-packages/docs/.vitepress/cache
 
 # Environment variables
 .env
