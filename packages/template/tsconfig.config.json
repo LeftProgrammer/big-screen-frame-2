@@ -9,6 +9,5 @@
     "vite.config.ts",
     "config/**/*.ts",
     "config/**/*.d.ts",
-    "packages/template/env.d.ts"
   ]
 }

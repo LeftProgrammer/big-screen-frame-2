@@ -50,10 +50,10 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
         // "@": resolve(__dirname, "./src"),
         // "components": resolve(__dirname, "./src/components"),
         // "api": resolve(__dirname, "./src/api"),
-        '@jinghe/jinghe-lanhai':
+        '@jinghe/jinghe-sanjioarou-bigscreen':
           isProduction
-            ? '@jinghe/jinghe-lanhai'               // 使用发布版本
-            : '@jinghe/jinghe-lanhai/src/index.ts', // 使用本地源码
+            ? '@jinghe/jinghe-sanjioarou-bigscreen'               // 使用发布版本
+            : '@jinghe/jinghe-sanjioarou-bigscreen/src/index.ts', // 使用本地源码
       },
     },
     css: {
@@ -71,7 +71,7 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
       minify: isProduction, // 生产环境开启压缩
     },
     optimizeDeps: {
-      exclude: ['@jinghe/jinghe-lanhai'],
+      exclude: ['@jinghe/jinghe-sanjioarou-bigscreen'],
     },
     app: {
       config: {
