@@ -2,9 +2,7 @@
   "name": "jinghe-sanjiaoroad-bigscreen-template",
   "version": "1.0.0",
   "description": "",
-  "author": "",
   "type": "module",
-  "private": true,
   "scripts": {
     "dev": "vite",
     "build:old": "run-p type-check build-only",

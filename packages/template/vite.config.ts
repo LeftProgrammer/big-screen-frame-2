@@ -32,7 +32,7 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
     base: "./",
     server: {
       host: true, // 监听所有地址，包括局域网和公网地址
-      port: 8112, // 指定开发服务器端口号
+      port: 8888, // 指定开发服务器端口号
       open: true, // 启动时自动打开浏览器
       strictPort: false, // 端口被占用时允许自动尝试下一个可用端口
       proxy: {
@@ -50,10 +50,10 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
         // "@": resolve(__dirname, "./src"),
         // "components": resolve(__dirname, "./src/components"),
         // "api": resolve(__dirname, "./src/api"),
-        '@jinghe/jinghe-sanjioarou-bigscreen':
-          isProduction
-            ? '@jinghe/jinghe-sanjioarou-bigscreen'               // 使用发布版本
-            : '@jinghe/jinghe-sanjioarou-bigscreen/src/index.ts', // 使用本地源码
+        // '@jinghe/jinghe-lanhai':
+        //   isProduction
+        //     ? '@jinghe/jinghe-lanhai'               // 使用发布版本
+        //     : '@jinghe/jinghe-lanhai/src/index.ts', // 使用本地源码
       },
     },
     css: {
@@ -71,7 +71,7 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
       minify: isProduction, // 生产环境开启压缩
     },
     optimizeDeps: {
-      exclude: ['@jinghe/jinghe-sanjioarou-bigscreen'],
+      exclude: ['@jinghe/jinghe-lanhai'],
     },
     app: {
       config: {
